@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'pages/base.html' %}
 {% load humanize %}
 
 {% block title %}| {{ listing.title }}{% endblock %}
@@ -23,7 +23,8 @@
             <nav>
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
-                        <a href="{% url 'index' %}">Home</a>
+                        <a href="{% url 'index' %}">
+                            <i class="fas fa-home"></i> Home</a></a>
                     </li>
                     <li class="breadcrumb-item">
                         <a href="{% url 'listings' %}">Listings</a>
